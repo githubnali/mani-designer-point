@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Form definitions — Mani Designer Point</title>
+  </head>
+  <body>
+    <!--
+      This file exists only so Netlify can detect the enquiry form at build time.
+      It is never linked from the website. Keep the field names in sync with
+      src/components/common/ContactForm.tsx.
+    -->
+    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input name="bot-field" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <input type="text" name="interest" />
+      <textarea name="message"></textarea>
+    </form>
+  </body>
+</html>

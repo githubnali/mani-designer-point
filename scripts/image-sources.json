@@ -1,0 +1,192 @@
+[
+  {
+    "name": "hero-gift-box",
+    "pexelsId": "6832992",
+    "aspect": "4:5",
+    "alt": "Deep red gift box tied with an ivory ribbon on a warm wooden table"
+  },
+  {
+    "name": "acrylic-frame",
+    "pexelsId": "8015565",
+    "aspect": "1:1",
+    "alt": "Clear acrylic photo block and a blank card styled on a white surface"
+  },
+  {
+    "name": "acrylic-stand",
+    "pexelsId": "8015523",
+    "aspect": "4:3",
+    "alt": "Minimal clear acrylic display stand on a light surface"
+  },
+  {
+    "name": "acrylic-display",
+    "pexelsId": "10187118",
+    "aspect": "4:3",
+    "alt": "Clear acrylic display stand holding a blank card in a bright studio"
+  },
+  {
+    "name": "woodworking",
+    "pexelsId": "6790088",
+    "aspect": "4:3",
+    "alt": "Craftsperson hand-planing a piece of light wood at a workbench"
+  },
+  {
+    "name": "wood-carving",
+    "pexelsId": "36492217",
+    "aspect": "4:3",
+    "alt": "Close-up of intricately carved warm wood with leaf and scroll details"
+  },
+  {
+    "name": "wood-frames",
+    "pexelsId": "17345426",
+    "aspect": "4:3",
+    "alt": "Gallery wall of wooden picture frames in a warmly lit room"
+  },
+  {
+    "name": "gift-hand",
+    "pexelsId": "10205687",
+    "aspect": "4:3",
+    "alt": "Hands presenting a kraft gift box finished with a brown satin ribbon"
+  },
+  {
+    "name": "gift-red-flatlay",
+    "pexelsId": "6478794",
+    "aspect": "4:3",
+    "alt": "Red gift boxes with delicate ribbon bows arranged on a soft pink background"
+  },
+  {
+    "name": "printing-press",
+    "pexelsId": "6620972",
+    "aspect": "4:3",
+    "alt": "Offset printing press in a print studio with stacks of coloured paper"
+  },
+  {
+    "name": "printing-cards",
+    "pexelsId": "5706020",
+    "aspect": "4:3",
+    "alt": "Blank business cards arranged in a clean minimal layout"
+  },
+  {
+    "name": "printing-screen",
+    "pexelsId": "1509308",
+    "aspect": "4:3",
+    "alt": "Screen printing press producing printed stationery in a workshop"
+  },
+  {
+    "name": "laser-machine",
+    "pexelsId": "7254467",
+    "aspect": "4:3",
+    "alt": "Laser engraving machine cutting a fine pattern with a bright beam"
+  },
+  {
+    "name": "cnc-machine",
+    "pexelsId": "8956445",
+    "aspect": "4:3",
+    "alt": "Close-up of a CNC cutting machine shaping a material"
+  },
+  {
+    "name": "engraving-hands",
+    "pexelsId": "4354564",
+    "aspect": "4:3",
+    "alt": "Craftsperson carefully hand-finishing a detailed engraved piece"
+  },
+  {
+    "name": "tumblers",
+    "pexelsId": "32176015",
+    "aspect": "4:3",
+    "alt": "Two orange insulated tumblers with printed branding on a light surface"
+  },
+  {
+    "name": "notebook",
+    "pexelsId": "27837105",
+    "aspect": "4:3",
+    "alt": "Handmade notebook with a natural paper cover and exposed binding"
+  },
+  {
+    "name": "pen",
+    "pexelsId": "1090680",
+    "aspect": "4:3",
+    "alt": "Fountain pen resting on a clean neutral surface"
+  },
+  {
+    "name": "keychain",
+    "pexelsId": "16151365",
+    "aspect": "4:3",
+    "alt": "Metal keyring and keys styled on a dark leather surface"
+  },
+  {
+    "name": "keys",
+    "pexelsId": "31424880",
+    "aspect": "4:3",
+    "alt": "Set of keys with coloured tags arranged on a dark desk"
+  },
+  {
+    "name": "desk-accessories",
+    "pexelsId": "28028334",
+    "aspect": "4:3",
+    "alt": "Minimal desk accessories in warm orange and neutral tones"
+  },
+  {
+    "name": "framed-portrait",
+    "pexelsId": "10252177",
+    "aspect": "4:3",
+    "alt": "Wooden photo frame holding a framed portrait on a sideboard"
+  },
+  {
+    "name": "mug",
+    "pexelsId": "9261414",
+    "aspect": "4:3",
+    "alt": "Personalised ceramic mug with a printed design on a light table"
+  },
+  {
+    "name": "craft-workshop",
+    "pexelsId": "36388459",
+    "aspect": "4:3",
+    "alt": "Warm craft workshop with wooden tools and handmade pieces on workbenches"
+  },
+  {
+    "name": "craft-hands",
+    "pexelsId": "4690306",
+    "aspect": "4:3",
+    "alt": "Hands assembling a handmade craft piece on a work table"
+  },
+  {
+    "name": "bottles",
+    "pexelsId": "7690201",
+    "aspect": "4:3",
+    "alt": "Two reusable insulated bottles in red and teal"
+  },
+  {
+    "name": "magazine",
+    "pexelsId": "8084481",
+    "aspect": "4:3",
+    "alt": "Stack of printed magazines and brochures with crisp paper edges"
+  },
+  {
+    "name": "wooden-clock",
+    "local": "wooden-clock.jpg",
+    "aspect": "4:3",
+    "cropBottom": 52,
+    "alt": "Round wooden wall clock with a delicate engraved botanical pattern"
+  },
+  {
+    "name": "wooden-wall-art",
+    "local": "wooden-wall-art.jpg",
+    "aspect": "4:3",
+    "cropBottom": 52,
+    "alt": "Framed laser-cut wooden wall art panel with a geometric mountain design"
+  },
+  {
+    "name": "desk-organizer",
+    "local": "desk-organizer.jpg",
+    "aspect": "4:3",
+    "cropBottom": 52,
+    "alt": "Wooden desk organiser with trays for stationery and everyday essentials"
+  },
+  {
+    "name": "acrylic-trophy",
+    "local": "acrylic-trophy.jpg",
+    "aspect": "4:3",
+    "cropBottom": 52,
+    "alt": "Two faceted clear acrylic award trophies on a bright pedestal"
+  }
+]

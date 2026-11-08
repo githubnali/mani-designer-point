@@ -1,0 +1,21 @@
+{
+  "name": "Mani Designer Point",
+  "short_name": "Mani Designer",
+  "description": "Customised products, corporate gifting, printing and laser cutting and engraving.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#082C5A",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
