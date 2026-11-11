@@ -47,9 +47,9 @@ function isLocalPreview() {
   )
 }
 
-export function ContactForm() {
+export function ContactForm({ defaultInterest = '' }: { defaultInterest?: string }) {
   const [searchParams] = useSearchParams()
-  const requestedInterest = searchParams.get('interest') ?? ''
+  const requestedInterest = defaultInterest || searchParams.get('interest') || ''
   const initialInterest = (contactInterests as readonly string[]).includes(requestedInterest)
     ? requestedInterest
     : ''

@@ -9,12 +9,13 @@ import {
   Sticker,
 } from 'lucide-react'
 import { ButtonLink } from '../components/common/Button'
-import { CTABanner } from '../components/common/CTABanner'
+import { EnquirySection } from '../components/common/EnquirySection'
 import { PageHero } from '../components/common/PageHero'
 import { PageMeta } from '../components/common/PageMeta'
 import { ResponsiveImage } from '../components/common/ResponsiveImage'
 import { SectionHeading } from '../components/common/SectionHeading'
 import { img } from '../data/images'
+import { whatsappQuoteHref } from '../data/site'
 
 const printRange = [
   {
@@ -103,8 +104,8 @@ export function PrintingServicesPage() {
         imageAlt={img.printingPress.alt}
         imageSizes="(min-width: 1024px) 46vw, 100vw"
       >
-        <ButtonLink to="/contact-us?interest=Printing%20Services" size="lg" arrow="up-right">
-          Request a print quote
+        <ButtonLink to={whatsappQuoteHref('Printing Services')} size="lg" arrow="up-right">
+          Printing on WhatsApp
         </ButtonLink>
         <ButtonLink to="/services" size="lg" variant="outline" arrow="right">
           All services
@@ -216,11 +217,10 @@ export function PrintingServicesPage() {
         </div>
       </section>
 
-      <CTABanner
+      <EnquirySection
         title="Have a print job in mind?"
         description="Send the artwork or a rough idea, the quantity and your date. We will come back with the practical next step."
-        buttonLabel="Get a print quote"
-        image={img.magazine}
+        interest="Printing Services"
       />
     </>
   )

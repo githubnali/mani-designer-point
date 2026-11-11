@@ -6,6 +6,7 @@ import { useScrolled } from '../../hooks/useScrolled'
 import { cn } from '../../utils/cn'
 import { ButtonLink } from '../common/Button'
 import { Logo } from '../common/Logo'
+import { WhatsAppIcon } from '../common/WhatsAppIcon'
 import { MobileNav } from './MobileNav'
 import { NavDropdown } from './NavDropdown'
 
@@ -23,7 +24,7 @@ export function Header() {
           scrolled && 'shadow-header',
         )}
       >
-        <div className="container-site flex h-16 items-center justify-between gap-4 lg:h-[76px] lg:gap-6">
+        <div className="container-site flex h-16 items-center justify-between gap-2 lg:h-[76px] lg:gap-6">
           <Logo onClick={() => setMobileOpen(false)} />
 
           <nav className="hidden items-center gap-0.5 lg:flex" aria-label="Primary navigation">
@@ -54,10 +55,21 @@ export function Header() {
 
           <div className="hidden items-center gap-2 lg:flex">
             <ButtonLink to={quoteHref} size="sm" arrow="up-right">
-              Get a Quote
+              WhatsApp Us
             </ButtonLink>
           </div>
 
+          <div className="flex shrink-0 items-center gap-2 lg:hidden">
+            <a
+              href={quoteHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Chat on WhatsApp (opens in a new tab)"
+              title="Chat on WhatsApp"
+              className="grid h-11 w-11 place-items-center rounded-full bg-[#128C7E] text-white transition-colors hover:bg-[#075E54]"
+            >
+              <WhatsAppIcon size={22} />
+            </a>
           <button
             type="button"
             onClick={() => setMobileOpen((value) => !value)}
@@ -68,6 +80,7 @@ export function Header() {
           >
             {mobileOpen ? <X size={21} aria-hidden="true" /> : <Menu size={21} aria-hidden="true" />}
           </button>
+          </div>
         </div>
       </header>
 

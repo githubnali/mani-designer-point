@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react'
+import { quoteHref } from '../data/site'
 import { SlidersHorizontal, Sparkles } from 'lucide-react'
 import { CategoryCard } from '../components/cards/CategoryCard'
 import { ProductCard } from '../components/cards/ProductCard'
@@ -158,7 +159,8 @@ export function ProductsPage() {
       <CTABanner
         title="Planning a set for a team or event?"
         description="Tell us the quantity, occasion and timeline you are working with. We will confirm what is practical before you commit."
-        buttonLabel="Request a quote"
+        buttonLabel="Chat on WhatsApp"
+        buttonHref={quoteHref}
         image={img.giftHand}
       />
     </>

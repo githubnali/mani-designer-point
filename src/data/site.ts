@@ -17,7 +17,7 @@ export const site = {
   email: 'hello@manidesignerpoint.com',
   phone: '+91 96422 94416',
   phoneHref: '+919642294416',
-  whatsapp: null,
+  whatsapp: '919642294416',
   address: {
     line1: 'Shop No. 5-21, Opp. UCO Bank, Near Pillar No. 1540',
     line2: 'Durga Nagar, Krishna Nagar, Dilsukhnagar, Hyderabad, Telangana 500060',
@@ -77,4 +77,12 @@ export const contactInterests = [
   'Something else',
 ] as const
 
-export const quoteHref = '/contact-us'
+export function whatsappQuoteHref(interest?: string) {
+  const message = interest
+    ? `Hi Mani Designer Point, I would like a quote for ${interest}. Please share pricing and details.`
+    : 'Hi Mani Designer Point, I would like a quote. Please help me with pricing and details.'
+
+  return `https://wa.me/${site.whatsapp}?text=${encodeURIComponent(message)}`
+}
+
+export const quoteHref = whatsappQuoteHref()

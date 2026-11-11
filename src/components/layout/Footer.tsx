@@ -1,7 +1,8 @@
-import { ArrowUpRight, Clock, Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Youtube } from 'lucide-react'
+import { Clock, Facebook, Instagram, Linkedin, Mail, MapPin, Phone, Youtube } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { navigation, quoteHref, site, socialLinks } from '../../data/site'
 import { Logo } from '../common/Logo'
+import { WhatsAppIcon } from '../common/WhatsAppIcon'
 
 const socialIcons = {
   Instagram,
@@ -145,12 +146,14 @@ export function Footer() {
           </p>
           <div className="flex flex-wrap items-center gap-4">
             <span className="font-semibold uppercase tracking-[0.16em]">Design | Print | Service</span>
-            <Link
-              to={quoteHref}
+            <a
+              href={quoteHref}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-1 font-bold text-white transition hover:text-brand-red focus-visible:outline-white"
             >
-              Get a Quote <ArrowUpRight size={13} aria-hidden="true" />
-            </Link>
+              <WhatsAppIcon size={16} /> Chat on WhatsApp
+            </a>
           </div>
         </div>
       </div>

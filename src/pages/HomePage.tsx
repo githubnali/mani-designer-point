@@ -6,7 +6,7 @@ import { CategoryCard } from '../components/cards/CategoryCard'
 import { ProductCard } from '../components/cards/ProductCard'
 import { ServiceCard } from '../components/cards/ServiceCard'
 import { ButtonLink } from '../components/common/Button'
-import { CTABanner } from '../components/common/CTABanner'
+import { EnquirySection } from '../components/common/EnquirySection'
 import { FeatureCard } from '../components/common/FeatureCard'
 import { PageMeta } from '../components/common/PageMeta'
 import { ResponsiveImage } from '../components/common/ResponsiveImage'
@@ -18,6 +18,7 @@ import { img } from '../data/images'
 import { occasions } from '../data/occasions'
 import { featuredProducts, products } from '../data/products'
 import { services } from '../data/services'
+import { quoteHref } from '../data/site'
 
 const homeProducts = [
   ...featuredProducts,
@@ -100,8 +101,8 @@ export function HomePage() {
               <ButtonLink to="/products" size="lg" arrow="right">
                 Explore products
               </ButtonLink>
-              <ButtonLink to="/contact-us" size="lg" variant="outline" arrow="up-right">
-                Get a quote
+              <ButtonLink to={quoteHref} size="lg" variant="outline" arrow="up-right">
+                Chat on WhatsApp
               </ButtonLink>
             </div>
 
@@ -416,10 +417,9 @@ export function HomePage() {
       </section>
 
       <div className="pt-16 sm:pt-20 lg:pt-24">
-        <CTABanner
+        <EnquirySection
           title="Have something particular in mind?"
           description="Send us the idea, the occasion and any artwork you already have. We will help you work out the material, format and next step."
-          buttonLabel="Start your enquiry"
         />
       </div>
     </>

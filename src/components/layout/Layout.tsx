@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
 import { BackToTop } from '../common/BackToTop'
+import { FloatingWhatsApp } from '../common/FloatingWhatsApp'
 import { Footer } from './Footer'
 import { Header } from './Header'
 
@@ -19,6 +20,7 @@ export function Layout({ children }: LayoutProps) {
       </main>
       <Footer />
       <BackToTop />
+      <FloatingWhatsApp />
     </div>
   )
 }

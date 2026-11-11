@@ -24,7 +24,8 @@ export function BackToTop() {
       onClick={handleClick}
       aria-label="Back to top"
       title="Back to top"
-      className="fixed bottom-5 right-5 z-30 grid h-11 w-11 place-items-center rounded-full bg-brand-red-strong text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-brand-red-dark sm:bottom-6 sm:right-6"
+      className="fixed right-5 z-30 grid h-11 w-11 place-items-center rounded-full bg-brand-red-strong text-white shadow-lg transition hover:-translate-y-0.5 hover:bg-brand-red-dark sm:right-6"
+      style={{ bottom: 'calc(5.5rem + env(safe-area-inset-bottom, 0px))' }}
     >
       <ArrowUp size={19} aria-hidden="true" />
     </button>

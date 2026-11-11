@@ -2,7 +2,7 @@ import { Check, Sparkles } from 'lucide-react'
 import { CategoryCard } from '../components/cards/CategoryCard'
 import { ProductCard } from '../components/cards/ProductCard'
 import { ButtonLink } from '../components/common/Button'
-import { CTABanner } from '../components/common/CTABanner'
+import { EnquirySection } from '../components/common/EnquirySection'
 import { PageHero } from '../components/common/PageHero'
 import { PageMeta } from '../components/common/PageMeta'
 import { SectionHeading } from '../components/common/SectionHeading'
@@ -130,11 +130,10 @@ export function ProductCategoryPage({ slug }: ProductCategoryPageProps) {
         </div>
       </section>
 
-      <CTABanner
+      <EnquirySection
         title="Ready to start your project?"
         description="Tell us what you need, how many you are planning for and when you need it. We will confirm the details that matter before work begins."
-        buttonLabel="Send an enquiry"
-        image={category.image}
+        interest={category.name}
       />
     </>
   )

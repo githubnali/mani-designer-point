@@ -112,7 +112,7 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
 
         <div className="mt-6 space-y-3">
           <ButtonLink to={quoteHref} size="lg" className="w-full" arrow="right" >
-            Get a Quote
+            Chat on WhatsApp
           </ButtonLink>
           <div className="rounded-2xl border border-line bg-surface p-4 text-sm">
             <a href={`tel:${site.phoneHref}`} className="flex items-center gap-2 font-semibold text-ink">

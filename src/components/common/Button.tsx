@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, ArrowUpRight } from 'lucide-react'
 import type { ButtonHTMLAttributes, ReactNode } from 'react'
 import { cn } from '../../utils/cn'
+import { WhatsAppIcon } from './WhatsAppIcon'
 
 type Variant = 'primary' | 'secondary' | 'outline' | 'white' | 'ghost'
 type Size = 'sm' | 'md' | 'lg'
@@ -47,6 +48,18 @@ export function ButtonLink({
   arrow = false,
   ariaLabel,
 }: ButtonLinkProps) {
+  if (/^https?:\/\//i.test(to)) {
+    const isWhatsApp = to.startsWith('https://wa.me/')
+    return (
+      <a href={to} target="_blank" rel="noopener noreferrer" aria-label={ariaLabel} className={classes(variant, size, className)}>
+        {isWhatsApp && <WhatsAppIcon size={18} />}
+        {children}
+        {!isWhatsApp && arrow === 'right' && <ArrowRight size={17} aria-hidden="true" />}
+        {!isWhatsApp && arrow === 'up-right' && <ArrowUpRight size={17} aria-hidden="true" />}
+      </a>
+    )
+  }
+
   return (
     <Link to={to} aria-label={ariaLabel} className={classes(variant, size, className)}>
       {children}

@@ -1,6 +1,6 @@
 import { Check, Layers, Ruler, ScanLine } from 'lucide-react'
 import { ButtonLink } from '../components/common/Button'
-import { CTABanner } from '../components/common/CTABanner'
+import { EnquirySection } from '../components/common/EnquirySection'
 import { PageHero } from '../components/common/PageHero'
 import { PageMeta } from '../components/common/PageMeta'
 import { ResponsiveImage } from '../components/common/ResponsiveImage'
@@ -221,11 +221,10 @@ export function LaserCuttingEngravingPage() {
         </div>
       </section>
 
-      <CTABanner
+      <EnquirySection
         title="Let's make the cut"
         description="Tell us the material, size and artwork you have in mind. We will confirm the approach and the practical details."
-        buttonLabel="Start a laser enquiry"
-        image={img.engravingHands}
+        interest="Laser Cutting & Engraving"
       />
     </>
   )
