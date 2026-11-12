@@ -93,7 +93,7 @@ export function HomePage() {
             </h1>
 
             <p className="mt-5 max-w-xl text-[clamp(0.98rem,1.35vw,1.125rem)] leading-relaxed text-muted">
-              Customised acrylic and wooden products, corporate gifts and precise print and laser
+              Keychains, QR stands, awards, wooden LED lamps and personalised gifts, with paper printing and laser
               work — created around your name, brand or occasion.
             </p>
 

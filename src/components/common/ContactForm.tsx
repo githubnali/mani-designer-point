@@ -54,9 +54,13 @@ export function ContactForm({ defaultInterest = '' }: { defaultInterest?: string
     ? requestedInterest
     : ''
 
+  const requestedProduct = (searchParams.get('product') || '').slice(0, 120)
+  const initialMessage = requestedProduct ? `I would like to enquire about ${requestedProduct}.` : ''
+
   const [values, setValues] = useState<ContactFormValues>({
     ...emptyValues,
     interest: initialInterest,
+    message: initialMessage,
   })
   const [errors, setErrors] = useState<ContactFormErrors>({})
   const [status, setStatus] = useState<FormStatus>('idle')
@@ -144,7 +148,7 @@ export function ContactForm({ defaultInterest = '' }: { defaultInterest?: string
           className="mt-5"
           onClick={() => {
             setStatus('idle')
-            setValues({ ...emptyValues, interest: initialInterest })
+            setValues({ ...emptyValues, interest: initialInterest, message: initialMessage })
           }}
         >
           Send another enquiry

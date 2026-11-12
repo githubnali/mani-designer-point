@@ -6,11 +6,11 @@ export const services: Service[] = [
     slug: 'printing-services',
     name: 'Printing Services',
     path: '/services/printing-services',
-    description: 'High-quality printing for business, events and everyday brand needs.',
+    description: 'Paper printing and personalised T-shirt, mug and cap printing.',
     longDescription:
-      'From visiting cards and brochures to banners, stickers and promotional material, we help you print the pieces your business or occasion needs.',
+      'From visiting cards, bill books and catalogues to menus, labels and printed gifts, explore our paper and personalised printing range.',
     image: img.printingPress,
-    features: ['Visiting cards', 'Banners & posters', 'Stickers & labels', 'Brochures & flyers'],
+    features: ['Business stationery', 'Marketing print', 'Display & labels', 'T-shirts, mugs & caps'],
   },
   {
     slug: 'laser-cutting',

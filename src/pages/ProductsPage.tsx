@@ -10,7 +10,7 @@ import { PageMeta } from '../components/common/PageMeta'
 import { SectionHeading } from '../components/common/SectionHeading'
 import { productCategories } from '../data/categories'
 import { img } from '../data/images'
-import { products } from '../data/products'
+import { isProductInCategory, products } from '../data/products'
 import type { CategorySlug } from '../types'
 import { cn } from '../utils/cn'
 
@@ -20,7 +20,7 @@ export function ProductsPage() {
   const [filter, setFilter] = useState<Filter>('all')
 
   const visibleProducts = useMemo(
-    () => (filter === 'all' ? products : products.filter((product) => product.category === filter)),
+    () => (filter === 'all' ? products : products.filter((product) => isProductInCategory(product, filter))),
     [filter],
   )
 
@@ -29,7 +29,7 @@ export function ProductsPage() {
     ...productCategories.map((category) => ({
       value: category.slug as Filter,
       label: category.filterLabel,
-      count: products.filter((product) => product.category === category.slug).length,
+      count: products.filter((product) => isProductInCategory(product, category.slug)).length,
     })),
   ]
 

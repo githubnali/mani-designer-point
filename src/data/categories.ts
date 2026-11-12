@@ -6,18 +6,18 @@ export const productCategories: ProductCategory[] = [
     slug: 'acrylic-products',
     name: 'Acrylic Products',
     filterLabel: 'Acrylic',
-    description: 'Name plates, QR stands, badges and awards with a clean, modern finish.',
+    description: 'Acrylic keychains, QR stands, ID cards and logos, plus name plates, badges, trophies and awards.',
     longDescription:
-      'Clear and coloured acrylic products for desks, reception areas, events and gifting. Each piece is cut, engraved and finished to suit your design.',
+      'Explore acrylic keychains, QR stands, ID cards and name logos alongside our name plates, badges, trophies and awards. We confirm materials and finishes with your enquiry.',
     image: img.acrylicStand,
   },
   {
     slug: 'mdf-wooden-products',
     name: 'MDF & Wooden Products',
     filterLabel: 'MDF & Wooden',
-    description: 'Warm, natural pieces for gifting, interiors and everyday use.',
+    description: 'Wooden keychains and LED lamps for personal gifts and everyday use.',
     longDescription:
-      'From engraved keychains to wall art and desk organisers, our wooden range pairs natural textures with precise laser detailing.',
+      'Personalise a wooden keychain or explore a wooden LED lamp for your space or a special occasion. Share your design, quantity and preferred finish.',
     image: img.woodworking,
   },
   {
@@ -26,7 +26,7 @@ export const productCategories: ProductCategory[] = [
     filterLabel: 'Corporate Gifting',
     description: 'Thoughtful branded gifts for teams, clients and events.',
     longDescription:
-      'Build a gift set around your brand with drinkware, diaries, pens, keychains and desk accessories. Suitable for individual and bulk requirements.',
+      'Bring your brand to keychains, awards, mugs, T-shirts and caps. Explore practical gifts and recognition pieces for teams, clients and events.',
     image: img.giftHand,
   },
   {
@@ -35,7 +35,7 @@ export const productCategories: ProductCategory[] = [
     filterLabel: 'Customised Gifts',
     description: 'Personal gifts for birthdays, weddings, anniversaries and return gifts.',
     longDescription:
-      'Add a name, date, photo or message to create a gift that feels truly personal. Choose from acrylic, wood, print and keepsake options.',
+      'Personalise wooden, metal and acrylic keychains, printed mugs, T-shirts and caps, or a wooden LED lamp. Add your name, artwork or message to suit the occasion.',
     image: img.giftRedFlatlay,
   },
 ]

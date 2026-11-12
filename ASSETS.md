@@ -92,3 +92,11 @@ overlays. Avoid images with visible third-party branding or unlicensed artwork.
 
 When real photography is available, update the alt text so it describes the actual product shown,
 not the placeholder.
+
+## Client catalogue update
+
+Product cards now use category-specific line illustrations for the 15 client-supplied offerings. Add an `image` from `src/data/images.ts` to a product record when matching client photography is available; the card will display it in place of the illustration. Existing hero, category and gallery photographs remain representative placeholders.
+
+### Name plate sample
+
+`name-plate` uses `scripts/local-images/name-plate.png`, generated with the built-in image generation tool. It is a sample product mockup, not client photography. Prompt: photorealistic clear acrylic desk name plate on a navy base, reading “YOUR NAME” and “DESIGNATION”, three-quarter front view, pale blue-grey studio background, soft shadows, no people or extra objects. Responsive AVIF/WebP files are provided at 640 and 1280px.

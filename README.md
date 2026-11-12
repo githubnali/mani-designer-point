@@ -106,7 +106,8 @@ public/           Images, favicons, manifest, robots.txt, Netlify form definitio
 All repeated content lives in `src/data/`:
 
 - `site.ts` — business name, domain, phone, email, address, hours, navigation, social links
-- `products.ts` — 24 products across 4 categories
+- `products.ts` — 15 client-supplied products with shared gifting collections across 4 categories
+- `printing.ts` — 19 paper-printing items in 4 groups, plus T-shirt, mug and cap printing
 - `services.ts` — 3 service pages
 - `gallery.ts` — 18 gallery items and the home gallery selection
 - `categories.ts`, `occasions.ts`, `features.ts` — category, occasion and feature content

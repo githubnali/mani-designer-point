@@ -1,199 +1,180 @@
 import type { CategorySlug, Product } from '../types'
-import { img } from './images'
 
+// One record per product; collections let it appear in multiple relevant categories.
 export const products: Product[] = [
-  // Acrylic
   {
-    slug: 'acrylic-name-plate',
-    name: 'Acrylic Name Plate',
-    category: 'acrylic-products',
-    description: 'Crisp, freestanding name plates for desks, reception counters and cabins.',
-    image: img.acrylicStand,
-    featured: true,
-    popular: true,
+    "slug": "qr-code-stand",
+    "name": "QR Stands",
+    "category": "acrylic-products",
+    "collections": [
+      "corporate-gifting"
+    ],
+    "description": "Custom QR stands for payment links, menus and business information.",
+    "icon": "qr",
+    "featured": true
   },
   {
-    slug: 'qr-code-stand',
-    name: 'QR Code Stand',
-    category: 'acrylic-products',
-    description: 'A clear acrylic stand that puts your QR code, menu or payment link within easy reach.',
-    image: img.acrylicFrame,
-    featured: true,
-    popular: true,
+    "slug": "trophies",
+    "name": "Trophies",
+    "category": "acrylic-products",
+    "collections": [
+      "corporate-gifting"
+    ],
+    "description": "Trophies for competitions, celebrations and recognition. Ask us about material and finish options.",
+    "icon": "trophy",
+    "featured": true
   },
   {
-    slug: 'acrylic-badge',
-    name: 'Acrylic Badge',
-    category: 'acrylic-products',
-    description: 'Lightweight custom badges for events, teams and visitor identification.',
-    image: img.printingCards,
+    "slug": "awards",
+    "name": "Awards",
+    "category": "acrylic-products",
+    "collections": [
+      "corporate-gifting"
+    ],
+    "description": "Personalised awards with names, event details or company branding. Material and finish are confirmed with your quote.",
+    "icon": "award",
+    "featured": false
   },
   {
-    slug: 'acrylic-photo-frame',
-    name: 'Acrylic Photo Frame',
-    category: 'acrylic-products',
-    description: 'A modern way to display favourite photos, certificates and keepsakes.',
-    image: img.acrylicFrame,
-    popular: true,
+    "slug": "acrylic-keychains",
+    "name": "Acrylic Keychains",
+    "category": "acrylic-products",
+    "collections": [
+      "customised-gifts",
+      "corporate-gifting"
+    ],
+    "description": "Acrylic keychains personalised with names, logos or a design for your occasion.",
+    "icon": "key",
+    "featured": true
   },
   {
-    slug: 'acrylic-display-stand',
-    name: 'Acrylic Display Stand',
-    category: 'acrylic-products',
-    description: 'Minimal stands for showcasing products, notices and table cards.',
-    image: img.acrylicDisplay,
-    popular: true,
+    "slug": "pin-badges",
+    "name": "Pin Badges",
+    "category": "acrylic-products",
+    "collections": [
+      "corporate-gifting"
+    ],
+    "description": "Custom pin badges for teams, events and promotions. Share your design and preferred size.",
+    "icon": "pin-badge",
+    "featured": false
   },
   {
-    slug: 'acrylic-trophy',
-    name: 'Acrylic Trophy',
-    category: 'acrylic-products',
-    description: 'Custom awards for recognition moments, designed to suit your event.',
-    image: img.acrylicTrophy,
-  },
-
-  // MDF & Wooden
-  {
-    slug: 'wooden-keychain',
-    name: 'Wooden Keychain',
-    category: 'mdf-wooden-products',
-    description: 'Laser-engraved keychains in warm wood tones, ideal for gifting.',
-    image: img.keys,
-    featured: true,
-    popular: true,
+    "slug": "magnetic-badges",
+    "name": "Magnetic Badges",
+    "category": "acrylic-products",
+    "collections": [
+      "corporate-gifting"
+    ],
+    "description": "Magnetic badges for staff names, branding and event identification.",
+    "icon": "magnetic-badge",
+    "featured": false
   },
   {
-    slug: 'wooden-wall-art',
-    name: 'Wooden Wall Art',
-    category: 'mdf-wooden-products',
-    description: 'Layered and engraved wall pieces that add character to a room.',
-    image: img.woodenWallArt,
+    "slug": "acrylic-id-cards",
+    "name": "Acrylic ID Cards",
+    "category": "acrylic-products",
+    "collections": [
+      "corporate-gifting"
+    ],
+    "description": "Acrylic identification cards customised with your organisation and individual details.",
+    "icon": "id",
+    "featured": false
   },
   {
-    slug: 'wooden-clock',
-    name: 'Wooden Clock',
-    category: 'mdf-wooden-products',
-    description: 'Custom wall and desk clocks with engraved botanical and geometric details.',
-    image: img.woodenClock,
+    "slug": "acrylic-name-plate",
+    "name": "Name Plates",
+    "category": "acrylic-products",
+    "collections": [],
+    "description": "Personalised name plates for desks, doors and reception areas. Discuss the material and layout with us.",
+    "image": { base: "/images/name-plate", alt: "Sample clear acrylic desk name plate with YOUR NAME lettering on a navy base", width: 1280, height: 960 },
+    "featured": true
   },
   {
-    slug: 'wooden-photo-frame',
-    name: 'Wooden Photo Frame',
-    category: 'mdf-wooden-products',
-    description: 'Natural wood frames for photos, quotes and small keepsakes.',
-    image: img.framedPortrait,
+    "slug": "acrylic-name-logos",
+    "name": "Acrylic Name Logos",
+    "category": "acrylic-products",
+    "collections": [
+      "corporate-gifting"
+    ],
+    "description": "Custom acrylic names and logos for business displays, interiors and occasions.",
+    "icon": "logo",
+    "featured": false
   },
   {
-    slug: 'decorative-panel',
-    name: 'Decorative Panel',
-    category: 'mdf-wooden-products',
-    description: 'Intricate cut and engraved panels for interiors and gifting.',
-    image: img.woodCarving,
+    "slug": "wooden-keychain",
+    "name": "Wooden Keychains",
+    "category": "mdf-wooden-products",
+    "collections": [
+      "customised-gifts",
+      "corporate-gifting"
+    ],
+    "description": "Wooden keychains customised with names, initials or branding for personal and bulk gifting.",
+    "icon": "key",
+    "featured": true
   },
   {
-    slug: 'desk-organiser',
-    name: 'Desk Organiser',
-    category: 'mdf-wooden-products',
-    description: 'Practical wooden organisers for pens, cards and everyday essentials.',
-    image: img.deskOrganizer,
-  },
-
-  // Corporate Gifting
-  {
-    slug: 'branded-bottles',
-    name: 'Branded Bottles',
-    category: 'corporate-gifting',
-    description: 'Reusable bottles finished with your company name or logo.',
-    image: img.bottles,
-    featured: true,
+    "slug": "wooden-led-lamp",
+    "name": "Wooden LED Lamp",
+    "category": "mdf-wooden-products",
+    "collections": [
+      "customised-gifts"
+    ],
+    "description": "A wooden LED lamp for a thoughtful gift or a personal corner. Ask us about available designs and customisation.",
+    "icon": "lamp",
+    "featured": true
   },
   {
-    slug: 'corporate-diaries',
-    name: 'Corporate Diaries',
-    category: 'corporate-gifting',
-    description: 'Premium notebooks and diaries for teams, clients and events.',
-    image: img.notebook,
+    "slug": "metal-keychains",
+    "name": "Metal Keychains",
+    "category": "corporate-gifting",
+    "collections": [
+      "customised-gifts"
+    ],
+    "description": "Metal keychains for everyday use, team gifts and branded giveaways.",
+    "icon": "key",
+    "featured": false
   },
   {
-    slug: 'premium-pens',
-    name: 'Premium Pens',
-    category: 'corporate-gifting',
-    description: 'Elegant pens that make a practical, memorable corporate gift.',
-    image: img.pen,
+    "slug": "t-shirt-printing",
+    "name": "T-shirt Printing",
+    "category": "customised-gifts",
+    "collections": [
+      "corporate-gifting"
+    ],
+    "description": "Print your artwork, message or logo on T-shirts for individuals, teams and events.",
+    "icon": "shirt",
+    "featured": true
   },
   {
-    slug: 'metal-keychains',
-    name: 'Metal Keychains',
-    category: 'corporate-gifting',
-    description: 'Durable keychains with clean branding for everyday use.',
-    image: img.keychain,
+    "slug": "mug-printing",
+    "name": "Mug Printing",
+    "category": "customised-gifts",
+    "collections": [
+      "corporate-gifting"
+    ],
+    "description": "Personalised mugs with names, photos, messages or company branding.",
+    "icon": "mug",
+    "featured": true
   },
   {
-    slug: 'corporate-gift-set',
-    name: 'Corporate Gift Set',
-    category: 'corporate-gifting',
-    description: 'Curated sets combining desk, drinkware and stationery essentials.',
-    image: img.giftHand,
-    featured: true,
-  },
-  {
-    slug: 'desk-accessories',
-    name: 'Desk Accessories',
-    category: 'corporate-gifting',
-    description: 'Useful desk pieces that keep your brand close at hand.',
-    image: img.deskAccessories,
-  },
-
-  // Customised Gifts
-  {
-    slug: 'personalised-photo-frame',
-    name: 'Personalised Photo Frame',
-    category: 'customised-gifts',
-    description: 'Photo frames made personal with names, dates and engraved messages.',
-    image: img.framedPortrait,
-    featured: true,
-  },
-  {
-    slug: 'engraved-keychain',
-    name: 'Engraved Keychain',
-    category: 'customised-gifts',
-    description: 'A small, thoughtful gift with names, initials or a special date.',
-    image: img.keys,
-  },
-  {
-    slug: 'custom-mugs',
-    name: 'Custom Mugs',
-    category: 'customised-gifts',
-    description: 'Printed mugs for birthdays, teams, announcements and everyday cheer.',
-    image: img.mug,
-    featured: true,
-  },
-  {
-    slug: 'wooden-plaque',
-    name: 'Wooden Plaque',
-    category: 'customised-gifts',
-    description: 'Engraved plaques for milestones, thank-yous and recognition.',
-    image: img.woodCarving,
-  },
-  {
-    slug: 'acrylic-standee',
-    name: 'Acrylic Standee',
-    category: 'customised-gifts',
-    description: 'A clear, freestanding keepsake for desks, events and gifting.',
-    image: img.acrylicDisplay,
-  },
-  {
-    slug: 'gift-boxes',
-    name: 'Gift Boxes',
-    category: 'customised-gifts',
-    description: 'Thoughtfully packaged gift boxes ready for your occasion.',
-    image: img.heroGiftBox,
-  },
+    "slug": "cap-printing",
+    "name": "Cap Printing",
+    "category": "customised-gifts",
+    "collections": [
+      "corporate-gifting"
+    ],
+    "description": "Custom printed caps for teams, promotions, events and personal gifting.",
+    "icon": "cap",
+    "featured": false
+  }
 ]
 
 export const featuredProducts = products.filter((product) => product.featured)
 
-export function getProductsByCategory(category: CategorySlug): Product[] {
-  return products.filter((product) => product.category === category)
+export function isProductInCategory(product: Product, category: CategorySlug): boolean {
+  return product.category === category || Boolean(product.collections?.includes(category))
 }
 
+export function getProductsByCategory(category: CategorySlug): Product[] {
+  return products.filter((product) => isProductInCategory(product, category))
+}

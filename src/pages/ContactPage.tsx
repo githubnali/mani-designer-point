@@ -9,6 +9,7 @@ import {
   Phone,
   Youtube,
 } from 'lucide-react'
+import { useLocation } from 'react-router-dom'
 import { ContactForm } from '../components/common/ContactForm'
 import { PageHero } from '../components/common/PageHero'
 import { PageMeta } from '../components/common/PageMeta'
@@ -56,6 +57,7 @@ const faqs = [
 ]
 
 export function ContactPage() {
+  const { search } = useLocation()
   return (
     <>
       <PageMeta path="/contact-us" />
@@ -74,7 +76,7 @@ export function ContactPage() {
 
       <section className="section-pad">
         <div className="container-site grid gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
-          <ContactForm />
+          <ContactForm key={search} />
 
           <aside className="min-w-0 space-y-5">
             <div className="rounded-2xl bg-navy p-6 text-white sm:p-7">

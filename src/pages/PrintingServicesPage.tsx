@@ -1,13 +1,8 @@
-import {
-  BookOpen,
-  CreditCard,
-  FileText,
-  Image,
-  Mail,
-  Megaphone,
-  Menu,
-  Sticker,
-} from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { ProductCard } from '../components/cards/ProductCard'
+import { paperPrintingGroups, personalisedPrintSlugs } from '../data/printing'
+import { products } from '../data/products'
 import { ButtonLink } from '../components/common/Button'
 import { EnquirySection } from '../components/common/EnquirySection'
 import { PageHero } from '../components/common/PageHero'
@@ -16,49 +11,6 @@ import { ResponsiveImage } from '../components/common/ResponsiveImage'
 import { SectionHeading } from '../components/common/SectionHeading'
 import { img } from '../data/images'
 import { whatsappQuoteHref } from '../data/site'
-
-const printRange = [
-  {
-    icon: CreditCard,
-    title: 'Visiting cards',
-    description: 'A first impression in miniature, printed on a stock that suits the finish.',
-  },
-  {
-    icon: FileText,
-    title: 'Brochures & flyers',
-    description: 'Folded or flat print for services, offers, menus and event information.',
-  },
-  {
-    icon: Megaphone,
-    title: 'Banners & posters',
-    description: 'Large-format pieces for promotions, events, interiors and announcements.',
-  },
-  {
-    icon: Sticker,
-    title: 'Stickers & labels',
-    description: 'Branded stickers, product labels and packaging details in custom shapes.',
-  },
-  {
-    icon: Mail,
-    title: 'Letterheads & stationery',
-    description: 'Consistent business stationery for everyday correspondence.',
-  },
-  {
-    icon: BookOpen,
-    title: 'Invitations & cards',
-    description: 'Printed invitations, greeting cards and occasion stationery.',
-  },
-  {
-    icon: Image,
-    title: 'Certificates & awards',
-    description: 'Recognition print for teams, events, courses and milestones.',
-  },
-  {
-    icon: Menu,
-    title: 'Menus & table cards',
-    description: 'Practical print for hospitality, events and table settings.',
-  },
-]
 
 const quoteChecklist = [
   {
@@ -98,7 +50,7 @@ export function PrintingServicesPage() {
             Print that carries your brand <span className="text-brand-red">properly</span>
           </>
         }
-        description="Business stationery, promotional print and occasion pieces — produced with the same care you would give the design itself."
+        description="Paper printing for business and everyday needs, plus personalised T-shirts, mugs and caps — all made around your artwork."
         breadcrumbs={[{ label: 'Services', href: '/services' }, { label: 'Printing Services' }]}
         image={img.printingPress}
         imageAlt={img.printingPress.alt}
@@ -112,30 +64,37 @@ export function PrintingServicesPage() {
         </ButtonLink>
       </PageHero>
 
-      <section className="section-pad">
+      <section className="section-pad" id="paper-printing">
         <div className="container-site">
-          <SectionHeading
-            eyebrow="What we print"
-            title="Practical print, considered"
-            description="A selection of the print work we can help with. If your piece is not listed, ask — it may still be a good fit."
-          />
+          <SectionHeading eyebrow="Paper printing" title="From your first card to your next catalogue" description="Explore our complete paper-printing range. Select an item to enquire about quantities, sizes and finishes." />
+          <div className="mt-10 grid gap-5 md:grid-cols-2">
+            {paperPrintingGroups.map((group, index) => (
+              <article key={group.title} className="rounded-2xl border border-line bg-white p-6 shadow-card sm:p-8">
+                <div className="flex items-start justify-between gap-4">
+                  <h3 className="text-xl font-bold text-navy">{group.title}</h3>
+                  <span className="font-script text-3xl text-brand-red" aria-hidden="true">0{index + 1}</span>
+                </div>
+                <p className="mt-2 max-w-md text-sm leading-relaxed text-muted">{group.description}</p>
+                <ul className="mt-6 divide-y divide-line border-t border-line">
+                  {group.items.map((item) => (
+                    <li key={item}>
+                      <Link to={`/contact-us?interest=Printing%20Services&product=${encodeURIComponent(item)}`} aria-label={`Enquire about ${item}`} className="group flex items-center justify-between gap-4 rounded py-3 text-sm font-semibold text-navy transition hover:text-brand-red-strong">
+                        {item}<ArrowUpRight size={16} className="shrink-0 text-brand-blue transition group-hover:text-brand-red-strong" aria-hidden="true" />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
 
-          <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {printRange.map((item) => {
-              const ItemIcon = item.icon
-              return (
-                <article
-                  key={item.title}
-                  className="rounded-2xl border border-line bg-white p-5 shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-card-hover"
-                >
-                  <span className="grid h-10 w-10 place-items-center rounded-xl bg-brand-blue/10 text-brand-blue">
-                    <ItemIcon size={19} aria-hidden="true" />
-                  </span>
-                  <h3 className="mt-3.5 text-sm font-bold text-navy">{item.title}</h3>
-                  <p className="mt-1.5 text-xs leading-relaxed text-muted">{item.description}</p>
-                </article>
-              )
-            })}
+      <section className="section-pad bg-surface" id="personalised-printing">
+        <div className="container-site">
+          <SectionHeading eyebrow="Wear it. Gift it. Make it yours." title="T-shirt, mug & cap printing" description="Names, artwork and logos for personal gifts, team wear and branded giveaways. Share your design and quantity to get started." />
+          <div className="mt-9 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {products.filter((product) => personalisedPrintSlugs.includes(product.slug)).map((product) => <ProductCard key={product.slug} product={product} />)}
           </div>
         </div>
       </section>

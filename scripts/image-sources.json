@@ -188,5 +188,11 @@
     "aspect": "4:3",
     "cropBottom": 52,
     "alt": "Two faceted clear acrylic award trophies on a bright pedestal"
+  },
+  {
+    "name": "name-plate",
+    "local": "name-plate.png",
+    "aspect": "4:3",
+    "alt": "Sample clear acrylic desk name plate with YOUR NAME lettering on a navy base"
   }
 ]

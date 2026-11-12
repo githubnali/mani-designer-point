@@ -24,8 +24,10 @@ export type Product = {
   slug: string
   name: string
   category: CategorySlug
+  collections?: CategorySlug[]
   description: string
-  image: ImageAsset
+  image?: ImageAsset
+  icon?: string
   featured?: boolean
   popular?: boolean
 }

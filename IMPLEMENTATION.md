@@ -7,7 +7,7 @@ TypeScript, Tailwind CSS v4 and React Router.
 
 - **12 routes**, all prerendered to static HTML with unique metadata, canonical URLs, Open Graph /
   Twitter tags and JSON-LD.
-- **4 product categories**, **24 products**, **3 services**, **18 gallery items** and 4 gifting
+- **4 product categories**, **15 products**, **3 services**, **18 gallery items** and 4 gifting
   occasions, all driven from central data files.
 - **31 responsive image sets** in AVIF and WebP at 640/1280px, plus an OG image, favicons and web
   manifest.

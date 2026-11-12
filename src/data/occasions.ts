@@ -10,12 +10,12 @@ export type Occasion = {
 export const occasions: Occasion[] = [
   {
     name: 'Birthday Gifts',
-    description: 'Personalised mugs, frames and keepsakes for a thoughtful birthday surprise.',
+    description: 'Personalised mugs, keychains and wooden LED lamps for a thoughtful birthday surprise.',
     image: img.mug,
   },
   {
     name: 'Wedding Gifts',
-    description: 'Elegant engraved and acrylic pieces for the couple and their big day.',
+    description: 'Personalised keychains and printed gifts for the couple and their guests.',
     image: img.framedPortrait,
   },
   {

@@ -16,27 +16,27 @@ export const pageMetaList: PageMeta[] = [
   },
   {
     path: '/products/acrylic-products',
-    title: 'Acrylic Products | Name Plates, QR Stands & Awards',
+    title: 'Acrylic Products | Keychains, QR Stands, Badges & Awards',
     description:
-      'Browse custom acrylic name plates, QR code stands, badges, photo frames, display stands and trophies from Mani Designer Point.',
+      'Explore acrylic keychains, QR stands, ID cards and name logos, plus badges, name plates, trophies and awards from Mani Designer Point.',
   },
   {
     path: '/products/mdf-wooden-products',
-    title: 'MDF & Wooden Products | Keychains, Clocks & Wall Art',
+    title: 'MDF & Wooden Products | Wooden Keychains & LED Lamps',
     description:
-      'Explore laser-cut and engraved wooden keychains, wall art, clocks, photo frames, decorative panels and desk organisers from Mani Designer Point.',
+      'Explore personalised wooden keychains and wooden LED lamps from Mani Designer Point. Enquire about designs, quantities and customisation.',
   },
   {
     path: '/products/corporate-gifting',
     title: 'Corporate Gifting | Branded Gifts & Gift Sets',
     description:
-      'Branded bottles, diaries, pens, metal keychains, gift sets and desk accessories for teams, clients and events. Enquire with Mani Designer Point.',
+      'Branded keychains, trophies, awards, printed mugs, T-shirts and caps for teams, clients and events. Enquire with Mani Designer Point.',
   },
   {
     path: '/products/customised-gifts',
     title: 'Customised Gifts | Personalised Gifts for Every Occasion',
     description:
-      'Personalised photo frames, engraved keychains, custom mugs, wooden plaques, acrylic standees and gift boxes for birthdays, weddings and more.',
+      'Personalised keychains, printed mugs, T-shirts, caps and wooden LED lamps for birthdays, occasions and everyday gifting.',
   },
   {
     path: '/services',
@@ -46,9 +46,9 @@ export const pageMetaList: PageMeta[] = [
   },
   {
     path: '/services/printing-services',
-    title: 'Printing Services | Cards, Banners, Stickers & Brochures',
+    title: 'Paper & Personalised Printing | Cards, Catalogues, Mugs & T-shirts',
     description:
-      'Visiting cards, banners, posters, stickers, labels, brochures, flyers and custom promotional printing from Mani Designer Point.',
+      'Visiting cards, bill books, brochures, catalogues, menus, certificates, stickers and labels, plus T-shirt, mug and cap printing at Mani Designer Point.',
   },
   {
     path: '/services/laser-cutting-engraving',
