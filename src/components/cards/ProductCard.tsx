@@ -1,9 +1,9 @@
-import { ArrowUpRight, QrCode, Trophy, Award, KeyRound, ContactRound, RectangleHorizontal, Type, Lamp, Shirt, Coffee, Gift, type LucideProps } from 'lucide-react'
+import { QrCode, Trophy, Award, KeyRound, ContactRound, RectangleHorizontal, Type, Lamp, Shirt, Coffee, Gift, type LucideProps } from 'lucide-react'
 import type { ComponentType } from 'react'
-import { Link } from 'react-router-dom'
-import { productCategories } from '../../data/categories'
+import { whatsappQuoteHref } from '../../data/site'
 import type { Product } from '../../types'
 import { ResponsiveImage } from '../common/ResponsiveImage'
+import { WhatsAppIcon } from '../common/WhatsAppIcon'
 
 function PinBadgeIcon({ size = 24, ...props }: LucideProps) {
   return (
@@ -46,9 +46,8 @@ export function ProductCard({
   sizes = '(min-width: 1024px) 25vw, (min-width: 640px) 45vw, 92vw',
   priority = false,
 }: ProductCardProps) {
-  const category = productCategories.find((item) => item.slug === product.category)
-  const interest = encodeURIComponent(category?.name ?? 'Something else')
   const ProductIcon = productIcons[product.icon ?? ''] ?? Gift
+  const whatsappHref = whatsappQuoteHref(product.name)
 
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-white shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-card-hover">
@@ -78,14 +77,18 @@ export function ProductCard({
       <div className="flex flex-1 flex-col p-4 sm:p-5">
         <h3 className="text-[1.02rem] font-bold leading-snug text-navy">{product.name}</h3>
         <p className="mt-2 text-sm leading-relaxed text-muted">{product.description}</p>
-        <Link
-          to={`/contact-us?interest=${interest}&product=${encodeURIComponent(product.name)}`}
-          className="mt-auto inline-flex w-fit items-center gap-1.5 rounded-full pt-4 text-xs font-extrabold uppercase tracking-[0.12em] text-brand-blue transition hover:text-brand-red-strong"
-          aria-label={`Enquire about ${product.name}`}
-        >
-          Enquire
-          <ArrowUpRight size={14} aria-hidden="true" />
-        </Link>
+        <div className="mt-auto pt-5">
+          <a
+            href={whatsappHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex w-fit items-center gap-2 rounded-full bg-[#128C7E]/10 px-3.5 py-2.5 text-xs font-extrabold text-[#075E54] transition hover:bg-[#128C7E] hover:text-white"
+            aria-label={`WhatsApp Mani Designer Point for a quote on ${product.name} (opens in a new tab)`}
+          >
+            <WhatsAppIcon size={16} />
+            WhatsApp for quote
+          </a>
+        </div>
       </div>
     </article>
   )

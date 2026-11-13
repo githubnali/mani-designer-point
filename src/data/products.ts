@@ -86,7 +86,7 @@ export const products: Product[] = [
     "category": "acrylic-products",
     "collections": [],
     "description": "Personalised name plates for desks, doors and reception areas. Discuss the material and layout with us.",
-    "image": { base: "/images/name-plate", alt: "Sample clear acrylic desk name plate with YOUR NAME lettering on a navy base", width: 1280, height: 960 },
+    "icon": "name",
     "featured": true
   },
   {
