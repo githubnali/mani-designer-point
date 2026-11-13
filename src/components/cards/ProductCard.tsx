@@ -1,5 +1,6 @@
 import { QrCode, Trophy, Award, KeyRound, ContactRound, RectangleHorizontal, Type, Lamp, Shirt, Coffee, Gift, type LucideProps } from 'lucide-react'
 import type { ComponentType } from 'react'
+import { productCategories } from '../../data/categories'
 import { whatsappQuoteHref } from '../../data/site'
 import type { Product } from '../../types'
 import { ResponsiveImage } from '../common/ResponsiveImage'
@@ -46,6 +47,7 @@ export function ProductCard({
   sizes = '(min-width: 1024px) 25vw, (min-width: 640px) 45vw, 92vw',
   priority = false,
 }: ProductCardProps) {
+  const category = productCategories.find((item) => item.slug === product.category)
   const ProductIcon = productIcons[product.icon ?? ''] ?? Gift
   const whatsappHref = whatsappQuoteHref(product.name)
 
